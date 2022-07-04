@@ -1,2 +1,2 @@
 # [georgeanthony.net](https://georgeanthony.net)
-Personal website build in React.
+Personal website built in React.
