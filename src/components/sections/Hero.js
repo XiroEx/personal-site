@@ -130,7 +130,7 @@ const Hero = ({
                   <Button tag="a" color="primary" wideMobile href="#projects">
                     Projects
                     </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/xiroex">
+                  <Button tag="a" color="dark" wideMobile href="https://github.com/xiroex/georgeanthony.net">
                     View on Github
                     </Button>
                 </ButtonGroup>
