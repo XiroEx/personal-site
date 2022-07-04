@@ -8,12 +8,12 @@ import Cta from '../components/sections/Cta';
 
 const Home = () => {
 
+  //<Testimonial topDivider />
   return (
     <>
       <Hero className="illustration-section-01" />
       <FeaturesTiles />
-      <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
-      <Testimonial topDivider />
+      <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" /> 
       <Cta split />
     </>
   );

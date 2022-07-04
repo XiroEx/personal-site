@@ -19,16 +19,13 @@ const FooterNav = ({
     >
       <ul className="list-reset">
         <li>
-          <Link to="#0">Contact</Link>
+          <a href="https://blog.eliteentri.es/">Blog</a>
         </li>
         <li>
-          <Link to="#0">About us</Link>
+          <a href="mailto:georgeabreujr@georgeanthony.net">Email</a>
         </li>
         <li>
-          <Link to="#0">FAQ's</Link>
-        </li>
-        <li>
-          <Link to="#0">Support</Link>
+          <a href="https://www.buymeacoffee.com/georgeanthony">Tips</a>
         </li>
       </ul>
     </nav>

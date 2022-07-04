@@ -50,8 +50,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'Workflow that just works',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: <p>Prosperities in <span className="text-color-primary">progress</span></p> ,
+    paragraph: 'Currently more ideas than products. But it\'s all coming together!'
   };
 
   return (
@@ -59,18 +59,18 @@ const FeaturesSplit = ({
       {...props}
       className={outerClasses}
     >
-      <div className="container">
+      <div className="container" id="projects">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={splitClasses}>
 
-            <div className="split-item">
+          <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  Drop in Consulting, Long term advising
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                  George Anthony
                   </h3>
                 <p className="m-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -78,9 +78,38 @@ const FeaturesSplit = ({
               </div>
               <div className={
                 classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
+                  'split-item-image center-content-mobile reveal-from-right',
                   imageFill && 'split-item-image-fill'
                 )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/features-split-image-03.png')}
+                  alt="Features split 03"
+                  width={528}
+                  height={396} />
+              </div>
+            </div>
+
+
+            <div className="split-item">
+              <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item"
+                data-reveal-delay='100'>
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  Trading algorithmically
+                  </div>
+                <h3 className="mt-0 mb-12">
+                  Elite Entries
+                  </h3>
+                <p className="m-0">
+                  An algorithmic-focused trading platform relying on cloud strategy deployment and advanced order types with over $10m+ in lifetime cryptocurrency and equity volume.                  
+                </p>
+              </div>
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-left',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-delay='100'
                 data-reveal-container=".split-item">
                 <Image
                   src={require('./../../assets/images/features-split-image-01.png')}
@@ -90,53 +119,30 @@ const FeaturesSplit = ({
               </div>
             </div>
 
-            <div className="split-item">
-              <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
-                <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
-                <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-              </div>
-              <div className={
-                classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill'
-                )}
-                data-reveal-container=".split-item">
-                <Image
-                  src={require('./../../assets/images/features-split-image-02.png')}
-                  alt="Features split 02"
-                  width={528}
-                  height={396} />
-              </div>
-            </div>
 
             <div className="split-item">
-              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item" 
+                data-reveal-delay='200'>
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  Easy Client Relations
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                  (SampleCRM)
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Originally a simple mass SMS marketing tool for sending and scheduling mass text messages that has expanded into a growing ultra-lite CRM with conversations, contacts, notes, and built-in double text safeguards. Integrated with the Twilio API.
                   </p>
               </div>
               <div className={
                 classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
+                  'split-item-image center-content-mobile reveal-from-right',
                   imageFill && 'split-item-image-fill'
                 )}
+                data-reveal-delay='200'
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-03.png')}
-                  alt="Features split 03"
+                  src={require('./../../assets/images/features-split-image-02.gif')}
+                  alt="Features split 02"
                   width={528}
                   height={396} />
               </div>

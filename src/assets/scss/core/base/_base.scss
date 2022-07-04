@@ -125,3 +125,16 @@ td {
 		border-bottom: 1px solid color-border(divider-inverse);
 	}
 }
+
+.sendButton {
+	cursor: pointer;
+	float: right;
+	background: none;
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	border: none;
+	top: 16px;
+	right: 16px;
+	border: none;
+}
