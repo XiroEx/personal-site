@@ -81,7 +81,7 @@ const Header = ({
     setNum(num+1)
     if (num < 2) return
     setNum(0)
-    window.open(`sms:${process.env.REACT_APP_PHONE}`)
+    window.open(`sms:+${process.env.REACT_APP_PHONE}`)
   }
 
   const toggleSocial = (e) => {
