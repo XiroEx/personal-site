@@ -45,7 +45,7 @@ const FeaturesTiles = ({
 
   const sectionHeader = {
     title: <p>Details paint the <span className="text-color-primary">picture</span></p>,
-    paragraph: 'Skills reflect a marriage of personality & interests.'
+    paragraph: <p><span className="text-color-primary" style={{fontWeight:'bold'}}>Skills</span> reflect a marriage of personality & interests.</p>
   };
 
   return (
@@ -107,6 +107,28 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
                     <Image
+                      src={require('./../../assets/images/feature-tile-icon-04.svg').default}
+                      alt="Features tile icon 04"
+                      width={54}
+                      height={54} />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">
+                    Artificial Intelligence
+                    </h4>
+                  <p className="m-0 text-sm">
+                    Building on top of and applying machine learning models to real-world problems. From chatbots to image recognition, voice, & more.
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
+                    <Image
                       src={require('./../../assets/images/feature-tile-icon-05.svg').default}
                       alt="Features tile icon 05"
                       width={56}
@@ -124,7 +146,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" >
+            <div className="tiles-item reveal-from-bottom"  data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
@@ -141,28 +163,6 @@ const FeaturesTiles = ({
                     </h4>
                   <p className="m-0 text-sm">
                     Drop in consulting. Improve your web presence, client management, marketing, processing, financial efficiency, & more. Let's chat.
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-04.svg').default}
-                      alt="Features tile icon 04"
-                      width={54}
-                      height={54} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Artificial Intelligence
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Building on top of and applying machine learning models to real-world problems. From chatbots to image recognition, voice, & more.
                     </p>
                 </div>
               </div>

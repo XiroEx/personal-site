@@ -51,7 +51,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: <p>Prosperities in <span className="text-color-primary">progress</span></p> ,
-    paragraph: 'Currently more ideas than products. But it\'s all coming together!'
+    paragraph: <p>Currently more <span className="text-color-primary" style={{fontWeight:'bold'}}>ideas</span> than products. But it's all coming together!</p>
   };
 
   return (
