@@ -33,7 +33,7 @@ const Hero = ({
   )
   const [videoModalActive, setVideomodalactive] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [picture, setPicture] = useState('bad-headshot3.png')
+  const [picture, setPicture] = useState('profile.jpg')
   const handleScroll = () => {
     const position = window.pageYOffset;
     //setPicture(`bad-headshot${Math.floor(position/100)}.png`)
@@ -85,10 +85,10 @@ const Hero = ({
   
   useEffect(()=>{
     window.matchMedia("(min-width: 600px)").addEventListener('change', e => setMatches( e.matches ));
-    window.addEventListener("scroll", handleScroll);
+    //window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      //window.removeEventListener("scroll", handleScroll);
     };
   },[])
 
