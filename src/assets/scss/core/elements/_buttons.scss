@@ -125,6 +125,20 @@
 		}
 	}
 }
+.button-transparent {
+	background: transparent;
+
+    &:hover {
+		background: transparent;
+    }
+
+	&.is-loading {
+
+		&::after {
+			border: none;
+		}
+	}
+}
 
 .button-block {
     display: flex;

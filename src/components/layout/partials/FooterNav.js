@@ -22,7 +22,7 @@ const FooterNav = ({
           <a href="https://blog.eliteentri.es/">Blog</a>
         </li>
         <li>
-          <a href="mailto:georgeabreujr@georgeanthony.net">Email</a>
+          <a href="mailto:george8794@gmail.com">Email</a>
         </li>
         <li>
           <a href="https://www.buymeacoffee.com/georgeanthony">Tips</a>
