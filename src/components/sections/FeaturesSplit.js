@@ -130,7 +130,7 @@ const FeaturesSplit = ({
                   Easy Client Relations
                   </div>
                 <h3 className="mt-0 mb-12">
-                  (SampleCRM)
+                <a href="https://crm.georgeanthony.net" className='crmlink'>(SampleCRM)</a>
                   </h3>
                 <p className="m-0">
                   Originally a simple mass SMS marketing tool for sending and scheduling mass text messages that has expanded into a growing ultra-lite CRM with conversations, contacts, notes, and built-in double text safeguards. Integrated with the Twilio API.
@@ -143,11 +143,13 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-delay='200'
                 data-reveal-container=".split-item">
-                <Image
-                  src={require('./../../assets/images/features-split-image-02.gif')}
-                  alt="Features split 02"
-                  width={528}
-                  height={396} />
+                <a
+                href="https://crm.georgeanthony.net">
+                  <Image
+                    src={require('./../../assets/images/logo512.png')}
+                    alt="Features split 02"
+                    style={{width:396, margin:"auto"}} />
+                </a>
               </div>
             </div>
 
