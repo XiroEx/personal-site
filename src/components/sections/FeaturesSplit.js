@@ -86,7 +86,7 @@ const FeaturesSplit = ({
                   <Image
                     src={require('./../../assets/images/red.png')}
                     alt="Features split 03"
-                    style={{height:396, margin:"auto"}} />
+                    style={{width:396, margin:"auto"}} />
                 </a>
               </div>
             </div>
