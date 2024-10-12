@@ -1,21 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router } from "react-router-dom";
-import { createBrowserHistory } from "history";
+import { BrowserRouter } from "react-router-dom";
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 //import './App.css';
 import './assets/scss/style.scss';
+import { create } from 'lodash';
+import { createRoot } from 'react-dom/client';
 
-const history = createBrowserHistory();
-
-ReactDOM.render(
-  <Router history={history}>
-    <App />
-  </Router>,
-  document.getElementById('root')
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+root.render(
+  <BrowserRouter >
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </BrowserRouter>
 );
 
 // If you want your app to work offline and load faster, you can change

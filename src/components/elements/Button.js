@@ -19,18 +19,18 @@ const defaultProps = {
   loading: false,
   wide: false,
   wideMobile: false,
-  disabled: false
+  disabled: false,
 }
 
 const Button = ({
   className,
-  tag,
-  color,
-  size,
-  loading,
-  wide,
-  wideMobile,
-  disabled,
+  tag = defaultProps.tag,
+  color = defaultProps.color,
+  size = defaultProps.size,
+  loading = defaultProps.loading,
+  wide = defaultProps.wide,
+  wideMobile = defaultProps.wideMobile,
+  disabled = defaultProps.disabled,
   ...props
 }) => {
 
@@ -50,11 +50,10 @@ const Button = ({
       {...props}
       className={classes}
       disabled={disabled}
+      {...defaultProps}
     />
   );
 }
 
 Button.propTypes = propTypes;
-Button.defaultProps = defaultProps;
-
 export default Button;

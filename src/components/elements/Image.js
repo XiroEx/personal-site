@@ -20,10 +20,10 @@ const defaultProps = {
 
 const Image = ({
   className,
-  src,
-  width,
-  height,
-  alt,
+  src = defaultProps.src,
+  width = defaultProps.width,
+  height = defaultProps.height,
+  alt = defaultProps.alt,
   ...props
 }) => {
 
@@ -76,6 +76,5 @@ const Image = ({
 }
 
 Image.propTypes = propTypes;
-Image.defaultProps = defaultProps;
 
 export default Image;
