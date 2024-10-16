@@ -14,18 +14,14 @@ const propTypes = {
   ...SectionProps.types
 }
 
-const defaultProps = {
-  ...SectionProps.defaults
-}
-
 const Hero = ({
   className,
-  topOuterDivider,
-  bottomOuterDivider,
-  topDivider,
-  bottomDivider,
-  hasBgColor,
-  invertColor,
+  topOuterDivider = false,
+  bottomOuterDivider = false,
+  topDivider = false,
+  bottomDivider = false,
+  hasBgColor = false,
+  invertColor = false,
   ...props
 }) => {
   const [matches, setMatches] = useState(
@@ -165,6 +161,5 @@ const Hero = ({
 }
 
 Hero.propTypes = propTypes;
-Hero.defaultProps = defaultProps;
 
 export default Hero;

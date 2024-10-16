@@ -1,12 +1,8 @@
-import React, { useRef, useEffect } from 'react';
-import { useLocation, Switch } from 'react-router-dom';
-import AppRoute from './utils/AppRoute';
-import ScrollReveal from './utils/ScrollReveal';
+import React, { useEffect, useRef } from 'react';
 import ReactGA from 'react-ga';
-import './App.css'
-
-// Layouts
-import LayoutDefault from './layouts/LayoutDefault';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import './App.css';
+import ScrollReveal from './utils/ScrollReveal';
 
 // Views 
 import Home from './views/Home';
@@ -36,9 +32,9 @@ const App = () => {
     <ScrollReveal
       ref={childRef}
       children={() => (
-        <Switch>
-          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-        </Switch>
+        <Routes>
+          <Route exact path="/" Component={Home}/>
+        </Routes>
       )} />
   );
 }

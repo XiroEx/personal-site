@@ -20,11 +20,11 @@ const defaultProps = {
 
 const Checkbox = ({
   className,
-  children,
-  name,
-  value,
-  disabled,
-  checked,
+  children = defaultProps.children,
+  name = defaultProps.name,
+  value = defaultProps.value,
+  disabled = defaultProps.disabled,
+  checked = defaultProps.checked,
   ...props
 }) => {
 
@@ -49,6 +49,5 @@ const Checkbox = ({
 }
 
 Checkbox.propTypes = propTypes;
-Checkbox.defaultProps = defaultProps;
 
 export default Checkbox;

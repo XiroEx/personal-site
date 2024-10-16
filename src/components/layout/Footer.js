@@ -10,15 +10,10 @@ const propTypes = {
   topDivider: PropTypes.bool
 }
 
-const defaultProps = {
-  topOuterDivider: false,
-  topDivider: false
-}
-
 const Footer = ({
   className,
-  topOuterDivider,
-  topDivider,
+  topOuterDivider = false,
+  topDivider = false,
   ...props
 }) => {
 
@@ -58,6 +53,5 @@ const Footer = ({
 }
 
 Footer.propTypes = propTypes;
-Footer.defaultProps = defaultProps;
 
 export default Footer;
