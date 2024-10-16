@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "georgeanthonycrm"
+  },
+  "targets": {
+    "georgeanthonycrm": {
+      "hosting": {
+        "georgeanthony": [
+          "georgeanthony"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
