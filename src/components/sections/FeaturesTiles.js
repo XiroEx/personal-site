@@ -44,8 +44,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: <p>Details paint the <span className="text-color-primary">picture</span></p>,
-    paragraph: <p><span className="text-color-primary" style={{fontWeight:'bold'}}>Skills</span> reflect a marriage of personality & interests.</p>
+    title: <span>Details paint the <span className="text-color-primary">picture</span></span>,
+    paragraph: <span><span className="text-color-primary" style={{fontWeight:'bold'}}>Skills</span> reflect a marriage of personality & interests.</span>
   };
 
   return (

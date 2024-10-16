@@ -108,8 +108,8 @@ const Hero = ({
   );
 
   let scrollformore
-  if (matches) scrollformore = <span className='reveal-from-bottom' data-reveal-delay='3000'>Really. <br/> <a href='#skills' className='reveal-from-bottom' data-reveal-delay='4000'>Scroll for more ↓</a></span>
-   else scrollformore = <span className='reveal-from-bottom' data-reveal-delay='2000'>Really. <br/> <a href='#skills' data-reveal-delay='4000'>Scroll for more ↓</a></span>
+  if (matches) scrollformore = <span className='reveal-from-bottom' data-reveal-delay='2000'>Really. <br/> <a href='#skills' className='reveal-from-bottom' data-reveal-delay='3000'>Scroll for more ↓</a></span>
+   else scrollformore = <span className='reveal-from-bottom' data-reveal-delay='2000'>Really. <br/> <a href='#skills' data-reveal-delay='3000'>Scroll for more ↓</a></span>
   return (
     <section
       {...props}
@@ -123,7 +123,7 @@ const Hero = ({
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-              Building value by embracing innovations, reducing friction, & anticipating trends. Professional tools developed for everyone. {scrollformore}
+              Building value by embracing innovations, reducing friction, & anticipating trends. I build professional tools for everyone. {scrollformore}
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="400">
                 <ButtonGroup>
