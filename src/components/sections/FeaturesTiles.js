@@ -80,23 +80,23 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+            <div className="tiles-item reveal-from-bottom"  data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16"  style={{borderRadius:2.5, width:64, height:64}}>
+                  <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-02.svg').default}
-                      alt="Features tile icon 02"
-                      width={68}
-                      height={68} />
+                      src={require('./../../assets/images/cloud-compute.svg').default}
+                      alt="Features tile icon 03"
+                      width={56}
+                      height={56} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Trading
+                  Cloud Deployment
                     </h4>
                   <p className="m-0 text-sm">
-                    Building powerful tools with algorithmic signals, automated trades, & straight-forward interfaces, so you always feel in control. Human passion, computational logic. 
+                    Cloud-native, serverless, & containerization applications & microservices, deployed and managed with a focus on scalability, security, & cost optimization.
                     </p>
                 </div>
               </div>
@@ -118,13 +118,35 @@ const FeaturesTiles = ({
                     Artificial Intelligence
                     </h4>
                   <p className="m-0 text-sm">
-                    Building on top of and applying machine learning models to real-world problems. From chatbots to image recognition, voice, & more.
+                    Building on top of and applying machine learning models to real-world problems. From chatbots to image recognition, model-tuning, voice, & more.
                     </p>
                 </div>
               </div>
             </div>
 
             <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16"  style={{borderRadius:2.5, width:64, height:64}}>
+                    <Image
+                      src={require('./../../assets/images/feature-tile-icon-02.svg').default}
+                      alt="Features tile icon 02"
+                      width={68}
+                      height={68} />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">
+                    Trading
+                    </h4>
+                  <p className="m-0 text-sm">
+                    Powerful tools with algorithmic signals, automated trades, & straight-forward interfaces, so you always feel in control. Human passion, computational logic. 
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
@@ -141,28 +163,6 @@ const FeaturesTiles = ({
                     </h4>
                   <p className="m-0 text-sm">
                     Programming money to increase capital efficiency, access new markets, & provide immutability to accounting & data. Automate finances & workflows without reducing liquidity or authority.
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom"  data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-03.svg').default}
-                      alt="Features tile icon 03"
-                      width={56}
-                      height={56} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                  Consulting
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Drop in consulting. Improve your web presence, client management, marketing, processing, financial efficiency, & more. Let's chat.
                     </p>
                 </div>
               </div>
