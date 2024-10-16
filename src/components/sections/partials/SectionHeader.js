@@ -4,8 +4,14 @@ import classNames from 'classnames';
 
 const propTypes = {
   data: PropTypes.shape({
-    title: PropTypes.string,
-    paragraph: PropTypes.string
+    title: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.element
+    ]),
+    paragraph: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.element
+    ])
   }).isRequired,
   children: PropTypes.node,
   tag: PropTypes.oneOf(['h1', 'h2', 'h3'])

@@ -29,7 +29,7 @@ const Hero = ({
   )
   const [videoModalActive, setVideomodalactive] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [picture, setPicture] = useState('bad-headshot3.png')
+  const [picture, setPicture] = useState('profile.jpg')
   const handleScroll = () => {
     const position = window.pageYOffset;
     //setPicture(`bad-headshot${Math.floor(position/100)}.png`)
@@ -81,10 +81,10 @@ const Hero = ({
   
   useEffect(()=>{
     window.matchMedia("(min-width: 600px)").addEventListener('change', e => setMatches( e.matches ));
-    window.addEventListener("scroll", handleScroll);
+    //window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      //window.removeEventListener("scroll", handleScroll);
     };
   },[])
 
@@ -104,8 +104,8 @@ const Hero = ({
   );
 
   let scrollformore
-  if (matches) scrollformore = <span className='reveal-from-bottom' data-reveal-delay='3000'>Really. <br/> <a href='#skills' className='reveal-from-bottom' data-reveal-delay='4000'>Scroll for more ↓</a></span>
-   else scrollformore = <span className='reveal-from-bottom' data-reveal-delay='2000'>Really. <br/> <a href='#skills' data-reveal-delay='4000'>Scroll for more ↓</a></span>
+  if (matches) scrollformore = <span className='reveal-from-bottom' data-reveal-delay='2000'>Really. <br/> <a href='#skills' className='reveal-from-bottom' data-reveal-delay='3000'>Scroll for more ↓</a></span>
+   else scrollformore = <span className='reveal-from-bottom' data-reveal-delay='2000'>Really. <br/> <a href='#skills' data-reveal-delay='3000'>Scroll for more ↓</a></span>
   return (
     <section
       {...props}
@@ -119,7 +119,7 @@ const Hero = ({
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-              Building value by embracing innovations, reducing friction, & anticipating trends. Professional tools developed for everyone. {scrollformore}
+              Building value by embracing innovations, reducing friction, & anticipating trends. I build professional tools for everyone. {scrollformore}
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="400">
                 <ButtonGroup>
@@ -135,7 +135,7 @@ const Hero = ({
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="600">
             <a
-              data-video="https://player.vimeo.com/video/174002812"
+              data-video="https://www.youtube.com/embed/sOhhO0oU0RI"
               aria-controls="video-modal"
               href="#0"
               onClick={openModal}
@@ -152,7 +152,7 @@ const Hero = ({
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
-            video="https://player.vimeo.com/video/174002812"
+            video="https://www.youtube.com/embed/sOhhO0oU0RI"
             videoTag="iframe" />
         </div>
       </div>

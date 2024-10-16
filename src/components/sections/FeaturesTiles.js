@@ -44,8 +44,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: <p>Details paint the <span className="text-color-primary">picture</span></p>,
-    paragraph: 'Skills reflect a marriage of personality & interests.'
+    title: <span>Details paint the <span className="text-color-primary">picture</span></span>,
+    paragraph: <span><span className="text-color-primary" style={{fontWeight:'bold'}}>Skills</span> reflect a marriage of personality & interests.</span>
   };
 
   return (
@@ -63,7 +63,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-01.svg')}
+                      src={require('./../../assets/images/feature-tile-icon-01.svg').default}
                       alt="Features tile icon 01"
                       width={48}
                       height={48} />
@@ -80,23 +80,23 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+            <div className="tiles-item reveal-from-bottom"  data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16"  style={{borderRadius:2.5, width:64, height:64}}>
+                  <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-02.svg')}
-                      alt="Features tile icon 02"
-                      width={68}
-                      height={68} />
+                      src={require('./../../assets/images/cloud-compute.svg').default}
+                      alt="Features tile icon 03"
+                      width={56}
+                      height={56} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Trading
+                  Cloud Deployment
                     </h4>
                   <p className="m-0 text-sm">
-                    Building powerful tools with algorithmic signals, automated trades, & straight-forward interfaces, so you always feel in control. Human passion, computational logic. 
+                    Cloud-native, serverless, & containerization applications & microservices, deployed and managed with a focus on scalability, security, & cost optimization.
                     </p>
                 </div>
               </div>
@@ -107,7 +107,51 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-05.svg')}
+                      src={require('./../../assets/images/feature-tile-icon-04.svg').default}
+                      alt="Features tile icon 04"
+                      width={54}
+                      height={54} />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">
+                    Artificial Intelligence
+                    </h4>
+                  <p className="m-0 text-sm">
+                    Building on top of and applying machine learning models to real-world problems. From chatbots to image recognition, model-tuning, voice, & more.
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16"  style={{borderRadius:2.5, width:64, height:64}}>
+                    <Image
+                      src={require('./../../assets/images/feature-tile-icon-02.svg').default}
+                      alt="Features tile icon 02"
+                      width={68}
+                      height={68} />
+                  </div>
+                </div>
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8">
+                    Trading
+                    </h4>
+                  <p className="m-0 text-sm">
+                    Powerful tools with algorithmic signals, automated trades, & straight-forward interfaces, so you always feel in control. Human passion, computational logic. 
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
+                    <Image
+                      src={require('./../../assets/images/feature-tile-icon-05.svg').default}
                       alt="Features tile icon 05"
                       width={56}
                       height={56} />
@@ -124,56 +168,12 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" >
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-03.svg')}
-                      alt="Features tile icon 03"
-                      width={56}
-                      height={56} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                  Consulting
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Drop in consulting. Improve your web presence, client management, marketing, processing, financial efficiency, & more. Let's chat.
-                    </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-04.svg')}
-                      alt="Features tile icon 04"
-                      width={54}
-                      height={54} />
-                  </div>
-                </div>
-                <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Advising
-                    </h4>
-                  <p className="m-0 text-sm">
-                    Registered Investment Advisory offering comprehensive services while acting in your best interest as a fiduciary. We'll find the right mix of new & traditional assets for your specific situation, together.
-                    </p>
-                </div>
-              </div>
-            </div>
-
             <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16" style={{borderRadius:2.5, width:64, height:64}}>
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-06.svg')}
+                      src={require('./../../assets/images/feature-tile-icon-06.svg').default}
                       alt="Features tile icon 06"
                       width={56}
                       height={56} />

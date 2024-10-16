@@ -13,9 +13,9 @@ const defaultProps = {
 }
 
 const FormHint = ({
-  children,
+  children = defaultProps.children,
   className,
-  status,
+  status = defaultProps.status,
   ...props
 }) => {
 
@@ -36,6 +36,5 @@ const FormHint = ({
 }
 
 FormHint.propTypes = propTypes;
-FormHint.defaultProps = defaultProps;
 
 export default FormHint;

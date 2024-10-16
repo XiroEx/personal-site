@@ -50,8 +50,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: <p>Prosperities in <span className="text-color-primary">progress</span></p> ,
-    paragraph: 'Currently more ideas than products. But it\'s all coming together!'
+    title: <span>Prosperities in <span className="text-color-primary">progress</span></span> ,
+    paragraph: <span>Currently more <span className="text-color-primary" style={{fontWeight:'bold'}}>ideas</span> than products. But it's all coming together!</span>
   };
 
   return (
@@ -67,14 +67,13 @@ const FeaturesSplit = ({
           <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Drop in Consulting, Long term advising
+                  Automation Meets Intelligence
                   </div>
                 <h3 className="mt-0 mb-12">
-                  George Anthony
+                  <a href="https://red.redbtn.io" className='redlink'>Red</a> (by <a href="https://redbtn.io" className='redlink'>redbtn.io</a>)
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                Extended and improved interface for interacting with ChatGPT that includes custom functions and features, including the ability to search Google, scrape url data, and interact with Webhooks/RESTful APIs.</p>
               </div>
               <div className={
                 classNames(
@@ -82,11 +81,13 @@ const FeaturesSplit = ({
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <Image
-                  src={require('./../../assets/images/features-split-image-03.png')}
-                  alt="Features split 03"
-                  width={528}
-                  height={396} />
+                <a
+                href="https://red.redbtn.io">
+                  <Image
+                    src={require('./../../assets/images/red.png')}
+                    alt="Features split 03"
+                    style={{width:396, margin:"auto"}} />
+                </a>
               </div>
             </div>
 
@@ -98,7 +99,7 @@ const FeaturesSplit = ({
                   Trading algorithmically
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Elite Entries
+                  <a href="https://eliteentri.es" className='eelink'>Elite Entries</a>
                   </h3>
                 <p className="m-0">
                   An algorithmic-focused trading platform relying on cloud strategy deployment and advanced order types with over $10m+ in lifetime cryptocurrency and equity volume.                  
@@ -111,11 +112,13 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-delay='100'
                 data-reveal-container=".split-item">
-                <Image
-                  src={require('./../../assets/images/features-split-image-01.png')}
-                  alt="Features split 01"
-                  width={528}
-                  height={396} />
+                  <a
+                  href="https://eliteentri.es">
+                    <Image
+                    src={require('./../../assets/images/ee-favicon.ico')}
+                    alt="Features split 01"
+                    style={{width:396, margin:"auto"}} />
+                  </a>
               </div>
             </div>
 
@@ -127,7 +130,7 @@ const FeaturesSplit = ({
                   Easy Client Relations
                   </div>
                 <h3 className="mt-0 mb-12">
-                  (SampleCRM)
+                <a href="https://crm.georgeanthony.net" className='crmlink'>(SampleCRM)</a>
                   </h3>
                 <p className="m-0">
                   Originally a simple mass SMS marketing tool for sending and scheduling mass text messages that has expanded into a growing ultra-lite CRM with conversations, contacts, notes, and built-in double text safeguards. Integrated with the Twilio API.
@@ -140,11 +143,13 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-delay='200'
                 data-reveal-container=".split-item">
-                <Image
-                  src={require('./../../assets/images/features-split-image-02.gif')}
-                  alt="Features split 02"
-                  width={528}
-                  height={396} />
+                <a
+                href="https://crm.georgeanthony.net">
+                  <Image
+                    src={require('./../../assets/images/logo512.png')}
+                    alt="Features split 02"
+                    style={{width:396, margin:"auto"}} />
+                </a>
               </div>
             </div>
 
