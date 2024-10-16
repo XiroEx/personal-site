@@ -2,11 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import ReactGA from 'react-ga';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
-import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
-
-// Layouts
-import LayoutDefault from './layouts/LayoutDefault';
 
 // Views 
 import Home from './views/Home';
@@ -37,7 +33,7 @@ const App = () => {
       ref={childRef}
       children={() => (
         <Routes>
-          <Route exact path="/" Component={Home} layout={LayoutDefault} />
+          <Route exact path="/" Component={Home}/>
         </Routes>
       )} />
   );

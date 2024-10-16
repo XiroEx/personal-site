@@ -15,10 +15,10 @@ const defaultProps = {
 }
 
 const FormLabel = ({
-  className,
-  children,
-  labelHidden,
-  id,
+  className = '',
+  children = null,
+  labelHidden = false,
+  id = null,
   ...props
 }) => {
 
@@ -40,6 +40,5 @@ const FormLabel = ({
 }
 
 FormLabel.propTypes = propTypes;
-FormLabel.defaultProps = defaultProps;
 
 export default FormLabel;
