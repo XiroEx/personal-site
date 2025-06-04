@@ -1,6 +1,6 @@
 {
     "hosting": {
-      "target": "georgeanthony",
+      "site": "georgeanthonypersonal",
       "public": "build",
       "ignore": [
         "firebase.json",
